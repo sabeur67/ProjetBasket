@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Fiche Joueur</title>
+
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" />
+
+</head>
+<body>
+
+
+	<div class="container">
+
+		<h1>Fiche Joueur</h1>
+
+
+		<div class="row">
+			<p th:text="${joueur.id}"></p>
+			<p th:text="${joueur.nom}"></p>
+			<p th:text="${joueur.position}"></p>
+			<p th:text="${joueur.No}"></p>
+			<p th:text="${joueur.equipe}"></p>
+			<p th:text="${joueur.taille}"></p>
+			<p th:text="${joueur.poid}"></p>
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript"
+		src="webjars/bootstrap/4.0.0-2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

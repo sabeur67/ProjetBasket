@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Liste des joueurs</title>
+
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" />
+
+</head>
+<body>
+
+
+
+
+	<div class="container">
+
+		<h1>Liste des joueurs</h1>
+<!-- attention product c'était pour le produit -->
+		<div class="row">
+			<div th:each="j : ${joueurs}" class="col-md-4 my-1">
+					<p th:text="${j.nom}"></p>  <!-- attention on cherche à afficher le nom du détail et pas du groupe -->
+					<!-- attention j'ai retiré une balise qui a été oubliée -->
+			</div>
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript"
+		src="webjars/bootstrap/4.0.0-2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
